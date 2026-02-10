@@ -15,9 +15,9 @@
       --panel: #111318;
       --card: #151821;
       --border: #1f2430;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --accent: #3b82f6;
+      --text: #f3f4f6;
+      --muted: #d1d5db;
+      --accent: #60a5fa;
       --accent-soft: rgba(59,130,246,0.15);
     }
 
@@ -215,7 +215,7 @@
 
     .chapter li {
       margin-bottom: 0.5rem;
-      color: var(--muted);
+      color: var(--text);
     }
 
     .back {
@@ -238,82 +238,15 @@
       }
     }
   </style>
+
+  <!-- Librería para parsear YAML -->
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 </head>
 <body>
+  <!-- Contenedor dinámico donde se renderiza la app -->
+  <div id="app-container"></div>
 
-  <header>
-    <h1>Finance Reading Hub</h1>
-    <p>Ideas clave de libros de finanzas, inversiones y comportamiento económico.
-       Diseñado para leer un poco cada día y recordar solo lo que importa.</p>
-  </header>
-
-  <main>
-    <section class="books">
-
-      <a class="book-card" href="#book-psychology">
-        <div class="book-cover"></div>
-        <div class="book-info">
-          <div>
-            <h2>La psicología del dinero</h2>
-            <span>Morgan Housel</span>
-          </div>
-          <span class="cta">Continuar leyendo →</span>
-        </div>
-      </a>
-
-      <a class="book-card" href="#book-placeholder">
-        <div class="book-cover"></div>
-        <div class="book-info">
-          <div>
-            <h2>Próximo libro</h2>
-            <span>Autor</span>
-          </div>
-          <span class="cta">Explorar →</span>
-        </div>
-      </a>
-
-    </section>
-
-    <!-- Vista Libro -->
-    <section id="book-psychology" class="book-preview">
-      <h2>La psicología del dinero</h2>
-      <p class="muted">Morgan Housel</p>
-
-      <!-- Lista de capítulos -->
-      <div class="chapters">
-        <a class="chapter-card" href="#cap-1">
-          <span class="chapter-num">01</span>
-          <div>
-            <h3>Nadie está loco</h3>
-            <p>Cómo la historia personal define las decisiones financieras.</p>
-          </div>
-        </a>
-        <a class="chapter-card" href="#cap-2">
-          <span class="chapter-num">02</span>
-          <div>
-            <h3>Suerte y riesgo</h3>
-            <p>Por qué el resultado no siempre refleja habilidad.</p>
-          </div>
-        </a>
-      </div>
-
-      <!-- Vista Capítulo -->
-      <div id="cap-1" class="chapter">
-        <h3>Capítulo 1 · Nadie está loco</h3>
-        <p class="core">Las decisiones financieras siempre tienen sentido desde la historia personal de cada uno.</p>
-        <ul>
-          <li>Cada persona vive un mercado distinto</li>
-          <li>La experiencia pesa más que los datos</li>
-          <li>No juzgar decisiones sin contexto</li>
-        </ul>
-        <a href="#book-psychology" class="back">← Volver a capítulos</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    Proyecto personal · lectura consciente · sin ruido
-  </footer>
-
+  <!-- Aplicación principal -->
+  <script src="app.js"></script>
 </body>
 </html>
