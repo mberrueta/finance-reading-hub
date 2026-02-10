@@ -1,0 +1,31 @@
+id: psychology-of-money
+title: La psicología del dinero
+author: Morgan Housel
+cover: images/psychology-of-money/cover.jpg
+audiobook:
+  url: https://example.com/audiolibro
+  duration: "5h 48m"
+chapters:
+  - id: 1
+    title: Nadie está loco
+    core: Las decisiones financieras siempre tienen sentido desde la historia personal de cada uno.
+    bullets:
+      - Cada persona vive un mercado distinto
+      - La experiencia pesa más que los datos
+      - No juzgar decisiones sin contexto
+    audio:
+      start: "00:03:10"
+      duration: "12m"
+    image: images/psychology-of-money/cap01.jpg
+
+  - id: 2
+    title: Suerte y riesgo
+    core: El resultado no siempre refleja habilidad.
+    bullets:
+      - El azar tiene más peso del que creemos
+      - Mirar trayectorias, no momentos
+      - Sobrevivencia sesga conclusiones
+    audio:
+      start: "00:15:40"
+      duration: "10m"
+    image: images/psychology-of-money/cap02.jpg
