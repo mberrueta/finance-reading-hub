@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finance Reading Hub</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --panel: #111318;
+      --card: #151821;
+      --border: #1f2430;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #3b82f6;
+      --accent-soft: rgba(59,130,246,0.15);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, #111827, var(--bg));
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 2.5rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.6rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      margin-top: 1rem;
+      max-width: 720px;
+      font-size: 1.05rem;
+      color: var(--muted);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem 3rem;
+    }
+
+    .books {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.75rem;
+      margin-top: 2rem;
+    }
+
+    .book-card {
+      position: relative;
+      background: linear-gradient(180deg, var(--card), var(--panel));
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 1.5rem;
+      display: flex;
+      gap: 1.25rem;
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+      overflow: hidden;
+    }
+
+    .book-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, transparent 60%, var(--accent-soft));
+      opacity: 0;
+      transition: opacity .25s ease;
+    }
+
+    .book-card:hover::before {
+      opacity: 1;
+    }
+
+    .book-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+      border-color: rgba(59,130,246,0.5);
+    }
+
+    .book-cover {
+      width: 84px;
+      height: 120px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #1f2937, #374151);
+      flex-shrink: 0;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .book-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
+    }
+
+    .book-info h2 {
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .book-info span {
+      display: block;
+      margin-top: 0.35rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .book-info a {
+      margin-top: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .book-info a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      max-width: 1100px;
+      margin: 4rem auto 2rem;
+      padding: 0 1.5rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 640px) {
+      header {
+        padding-top: 3rem;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  
+    /* Chapters */
+    .book-preview { margin-top: 4rem; }
+
+    .chapters {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+
+    .chapter-card {
+      display: flex;
+      gap: 1rem;
+      padding: 1.25rem;
+      border-radius: 16px;
+      background: linear-gradient(180deg, var(--card), var(--panel));
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--text);
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+
+    .chapter-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 32px rgba(0,0,0,0.35);
+      border-color: rgba(59,130,246,0.5);
+    }
+
+    .chapter-num {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--accent);
+      min-width: 2.5rem;
+    }
+
+    /* Chapter view animation */
+    .chapter {
+      margin-top: 3rem;
+      padding: 2rem;
+      background: linear-gradient(180deg, var(--card), var(--panel));
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      animation: fadeSlideIn .4s ease forwards;
+    }
+
+    .chapter .core {
+      font-size: 1.15rem;
+      font-weight: 500;
+      margin: 1rem 0 1.5rem;
+    }
+
+    .chapter ul {
+      padding-left: 1.2rem;
+    }
+
+    .chapter li {
+      margin-bottom: 0.5rem;
+      color: var(--muted);
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    @keyframes fadeSlideIn {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Finance Reading Hub</h1>
+    <p>Ideas clave de libros de finanzas, inversiones y comportamiento económico.
+       Diseñado para leer un poco cada día y recordar solo lo que importa.</p>
+  </header>
+
+  <main>
+    <section class="books">
+
+      <a class="book-card" href="#book-psychology">
+        <div class="book-cover"></div>
+        <div class="book-info">
+          <div>
+            <h2>La psicología del dinero</h2>
+            <span>Morgan Housel</span>
+          </div>
+          <span class="cta">Continuar leyendo →</span>
+        </div>
+      </a>
+
+      <a class="book-card" href="#book-placeholder">
+        <div class="book-cover"></div>
+        <div class="book-info">
+          <div>
+            <h2>Próximo libro</h2>
+            <span>Autor</span>
+          </div>
+          <span class="cta">Explorar →</span>
+        </div>
+      </a>
+
+    </section>
+
+    <!-- Vista Libro -->
+    <section id="book-psychology" class="book-preview">
+      <h2>La psicología del dinero</h2>
+      <p class="muted">Morgan Housel</p>
+
+      <!-- Lista de capítulos -->
+      <div class="chapters">
+        <a class="chapter-card" href="#cap-1">
+          <span class="chapter-num">01</span>
+          <div>
+            <h3>Nadie está loco</h3>
+            <p>Cómo la historia personal define las decisiones financieras.</p>
+          </div>
+        </a>
+        <a class="chapter-card" href="#cap-2">
+          <span class="chapter-num">02</span>
+          <div>
+            <h3>Suerte y riesgo</h3>
+            <p>Por qué el resultado no siempre refleja habilidad.</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Vista Capítulo -->
+      <div id="cap-1" class="chapter">
+        <h3>Capítulo 1 · Nadie está loco</h3>
+        <p class="core">Las decisiones financieras siempre tienen sentido desde la historia personal de cada uno.</p>
+        <ul>
+          <li>Cada persona vive un mercado distinto</li>
+          <li>La experiencia pesa más que los datos</li>
+          <li>No juzgar decisiones sin contexto</li>
+        </ul>
+        <a href="#book-psychology" class="back">← Volver a capítulos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Proyecto personal · lectura consciente · sin ruido
+  </footer>
+
+</body>
+</html>
