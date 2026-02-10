@@ -157,6 +157,23 @@
         font-size: 2rem;
       }
     }
+
+    /* Responsive para layout de libro y capítulo */
+    @media (max-width: 768px) {
+      .book-info-layout {
+        flex-direction: column !important;
+      }
+      .book-info-layout img {
+        max-width: 100% !important;
+      }
+      .chapter-content-layout {
+        flex-direction: column !important;
+      }
+      .chapter-content-layout > div {
+        flex: 1 !important;
+        max-width: 100% !important;
+      }
+    }
   
     /* Chapters */
     .book-preview { margin-top: 4rem; }

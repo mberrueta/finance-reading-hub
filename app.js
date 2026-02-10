@@ -213,8 +213,13 @@ class Views {
       </a>
     `).join('');
 
+    const bookCoverHTML = book.cover ? `
+      <img src="${book.cover}" alt="${book.title}"
+           style="width: 100%; max-width: 300px; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.5);" />
+    ` : '';
+
     const summaryHTML = book.summary ? `
-      <p style="margin-top: 1rem; color: var(--text); font-size: 1.05rem; line-height: 1.7; max-width: 720px;">
+      <p style="margin-top: 1rem; color: var(--text); font-size: 1.05rem; line-height: 1.7;">
         ${book.summary}
       </p>
     ` : '';
@@ -232,9 +237,15 @@ class Views {
       <header>
         <a href="#" style="display: inline-block; margin-bottom: 1rem; color: var(--accent); text-decoration: none; font-size: 0.9rem;">← Volver al inicio</a>
         <h1>${book.title}</h1>
-        <p style="color: var(--muted);">${book.author}</p>
-        ${summaryHTML}
-        ${audiobookHTML}
+
+        <div class="book-info-layout" style="display: flex; gap: 2rem; align-items: flex-start; margin-top: 1rem;">
+          <div style="flex: 1; min-width: 0;">
+            <p style="color: var(--muted); margin: 0;">${book.author}</p>
+            ${summaryHTML}
+            ${audiobookHTML}
+          </div>
+          ${book.cover ? `<div style="flex-shrink: 0;">${bookCoverHTML}</div>` : ''}
+        </div>
       </header>
 
       <main>
@@ -252,17 +263,18 @@ class Views {
     const container = document.getElementById('app-container');
 
     const bulletsHTML = chapter.bullets
-      ? `<ul>${chapter.bullets.map(b => `<li>${b}</li>`).join('')}</ul>`
+      ? `<ul style="margin-top: 1rem;">${chapter.bullets.map(b => `<li>${b}</li>`).join('')}</ul>`
       : '';
 
     const expandHTML = chapter.expand
       ? `<div style="margin-top: 1.5rem; padding: 1rem; background: var(--panel); border-radius: 12px;">
-           <p style="color: var(--text);">${chapter.expand}</p>
+           <p style="color: var(--text); margin: 0;">${chapter.expand}</p>
          </div>`
       : '';
 
     const imageHTML = chapter.image
-      ? `<img src="${chapter.image}" alt="${chapter.title}" style="width: 100%; max-width: 600px; border-radius: 12px; margin-top: 1.5rem;" />`
+      ? `<img src="${chapter.image}" alt="${chapter.title}"
+             style="width: 100%; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.5);" />`
       : '';
 
     const audioHTML = chapter.audio
@@ -308,11 +320,15 @@ class Views {
 
       <main>
         <div class="chapter">
-          <p class="core">${chapter.core}</p>
-          ${bulletsHTML}
-          ${expandHTML}
-          ${imageHTML}
-          ${audioHTML}
+          <div class="chapter-content-layout" style="display: flex; gap: 3rem; align-items: flex-start;">
+            <div style="flex: 1; min-width: 0;">
+              <p class="core">${chapter.core}</p>
+              ${bulletsHTML}
+              ${expandHTML}
+              ${audioHTML}
+            </div>
+            ${chapter.image ? `<div style="flex: 0 0 400px; max-width: 400px;">${imageHTML}</div>` : ''}
+          </div>
           ${navigationHTML}
         </div>
       </main>
