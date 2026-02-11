@@ -43,6 +43,8 @@ chapters:
       - Punto clave 3
     expand: |
       Texto adicional opcional con más detalles
+    summary: |
+      Resumen adicional del capítulo (opcional)
     audio:
       start: "00:03:10"
       duration: "12m"

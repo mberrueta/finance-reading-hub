@@ -2,225 +2,245 @@ id: psychology-of-money
 title: La psicología del dinero
 author: Morgan Housel
 cover: https://cdn.podimo.com/images/ebccb8dc-7d3b-41f4-82f1-2563281b7b5d_400x400.png
-summary: >
-  Un libro sobre cómo el comportamiento, la experiencia personal y la psicología
-  influyen mucho más en el éxito financiero que la inteligencia o el conocimiento técnico.
-  Enseña a pensar a largo plazo, gestionar el riesgo y construir riqueza de forma sostenible.
+summary: 'Un libro sobre cómo el comportamiento, la experiencia personal y la psicología
+  influyen mucho más en el éxito financiero que la inteligencia o el conocimiento
+  técnico. Enseña a pensar a largo plazo, gestionar el riesgo y construir riqueza
+  de forma sostenible.
 
+  '
 chapters:
-  - id: 1
-    title: Nadie está loco
-    summary: >
-      Housel explica que las decisiones financieras que parecen irracionales suelen tener
-      sentido cuando se analizan desde la historia personal de cada individuo. Personas que
-      vivieron crisis, guerras o inflaciones extremas desarrollan una relación distinta con
-      el riesgo y el dinero.
-    core: Las decisiones financieras tienen sentido cuando se miran desde la historia personal.
-    image: images/psychology-of-money/c1.jpg 
-    bullets:
-      - Cada persona vive un mercado distinto
-      - La experiencia pesa más que los datos
-      - No juzgar decisiones sin contexto
+- id: 1
+  title: Nadie está loco
+  summary: 'Housel explica que las decisiones financieras que parecen irracionales
+    suelen tener sentido cuando se analizan desde la historia personal de cada individuo.
+    Personas que vivieron crisis, guerras o inflaciones extremas desarrollan una relación
+    distinta con el riesgo y el dinero.
 
-  - id: 2
-    title: Suerte y riesgo
-    summary: >
-      A través de ejemplos de inversores exitosos y fracasados, muestra que el resultado
-      final siempre mezcla habilidad y azar. Ignorar la suerte lleva a sobrestimar el talento
-      propio y a subestimar los riesgos.
-    core: El éxito y el fracaso siempre combinan habilidad y azar.
-    bullets:
-      - El azar tiene más peso del que solemos admitir
-      - Mirar trayectorias, no resultados aislados
-      - La supervivencia distorsiona las conclusiones
+    '
+  core: Las decisiones financieras tienen sentido cuando se miran desde la historia
+    personal.
+  image: images/psychology-of-money/c1.jpg
+  bullets:
+  - Cada persona vive un mercado distinto
+  - La experiencia pesa más que los datos
+  - No juzgar decisiones sin contexto
+- id: 2
+  title: Suerte y riesgo
+  summary: 'A través de ejemplos de inversores exitosos y fracasados, muestra que
+    el resultado final siempre mezcla habilidad y azar. Ignorar la suerte lleva a
+    sobrestimar el talento propio y a subestimar los riesgos.
 
-  - id: 3
-    title: Nunca es suficiente
-    summary: >
-      Relata casos de personas extremadamente ricas que lo perdieron todo por no saber
-      cuándo detenerse. El deseo constante de más puede empujar a asumir riesgos innecesarios
-      y destructivos.
-    core: El deseo constante de más puede destruir incluso grandes fortunas.
-    bullets:
-      - Saber cuándo es suficiente es una ventaja
-      - La comparación social es infinita
-      - El riesgo de perderlo todo aumenta cuando no hay límites
+    '
+  core: El éxito y el fracaso siempre combinan habilidad y azar.
+  image: images/psychology-of-money/c2.jpg
+  bullets:
+  - El azar tiene más peso del que solemos admitir
+  - Mirar trayectorias, no resultados aislados
+  - La supervivencia distorsiona las conclusiones
+- id: 3
+  title: Nunca es suficiente
+  summary: 'Relata casos de personas extremadamente ricas que lo perdieron todo por
+    no saber cuándo detenerse. El deseo constante de más puede empujar a asumir riesgos
+    innecesarios y destructivos.
 
-  - id: 4
-    title: Confusión de compuestos
-    summary: >
-      Explica cómo las grandes fortunas suelen ser el resultado de retornos razonables
-      mantenidos durante mucho tiempo. El interés compuesto parece simple, pero requiere
-      paciencia extrema.
-    core: El interés compuesto es poderoso, pero requiere tiempo y paciencia.
-    bullets:
-      - El tiempo es más importante que la tasa
-      - Los resultados extremos necesitan décadas
-      - La constancia supera a la genialidad
+    '
+  core: El deseo constante de más puede destruir incluso grandes fortunas.
+  image: images/psychology-of-money/c3.jpg
+  bullets:
+  - Saber cuándo es suficiente es una ventaja
+  - La comparación social es infinita
+  - El riesgo de perderlo todo aumenta cuando no hay límites
+- id: 4
+  title: Confusión de compuestos
+  summary: 'Explica cómo las grandes fortunas suelen ser el resultado de retornos
+    razonables mantenidos durante mucho tiempo. El interés compuesto parece simple,
+    pero requiere paciencia extrema.
 
-  - id: 5
-    title: Enriquecerse vs mantenerse rico
-    summary: >
-      Housel diferencia entre tomar riesgos para crecer y evitar riesgos para sobrevivir.
-      Muchos saben cómo ganar dinero, pero pocos saben cómo no perderlo.
-    core: Ganar dinero y conservarlo requieren habilidades distintas.
-    bullets:
-      - Enriquecerse implica tomar riesgos
-      - Mantenerse rico implica evitarlos
-      - La supervivencia es la base de todo
+    '
+  core: El interés compuesto es poderoso, pero requiere tiempo y paciencia.
+  image: images/psychology-of-money/c4.jpg
+  bullets:
+  - El tiempo es más importante que la tasa
+  - Los resultados extremos necesitan décadas
+  - La constancia supera a la genialidad
+- id: 5
+  title: Enriquecerse vs mantenerse rico
+  summary: 'Housel diferencia entre tomar riesgos para crecer y evitar riesgos para
+    sobrevivir. Muchos saben cómo ganar dinero, pero pocos saben cómo no perderlo.
 
-  - id: 6
-    title: La cola gorda
-    summary: >
-      Muestra que una pequeña cantidad de decisiones o eventos explican la mayor parte de los
-      resultados financieros. El reto es mantenerse en el juego el tiempo suficiente.
-    core: Un pequeño número de eventos explica la mayoría de los resultados.
-    bullets:
-      - Pocos momentos generan la mayoría de las ganancias
-      - Hay que estar en el juego para capturarlos
-      - La paciencia es estratégica
+    '
+  core: Ganar dinero y conservarlo requieren habilidades distintas.
+  image: images/psychology-of-money/c5.jpg
+  bullets:
+  - Enriquecerse implica tomar riesgos
+  - Mantenerse rico implica evitarlos
+  - La supervivencia es la base de todo
+- id: 6
+  title: La cola gorda
+  summary: 'Muestra que una pequeña cantidad de decisiones o eventos explican la mayor
+    parte de los resultados financieros. El reto es mantenerse en el juego el tiempo
+    suficiente.
 
-  - id: 7
-    title: Libertad
-    summary: >
-      El dinero no es solo consumo: es la capacidad de controlar el propio tiempo.
-      La verdadera riqueza es poder decidir qué hacer con tu vida.
-    core: El dinero sirve para controlar tu tiempo, no para acumular cosas.
-    bullets:
-      - La libertad es el mayor dividendo
-      - Controlar el tiempo es el verdadero lujo
-      - Menos gastos fijos = más opciones
+    '
+  core: Un pequeño número de eventos explica la mayoría de los resultados.
+  image: images/psychology-of-money/c6.jpg
+  bullets:
+  - Pocos momentos generan la mayoría de las ganancias
+  - Hay que estar en el juego para capturarlos
+  - La paciencia es estratégica
+- id: 7
+  title: Libertad
+  image: images/psychology-of-money/c7.jpg
+  summary: 'El dinero no es solo consumo: es la capacidad de controlar el propio tiempo.
+    La verdadera riqueza es poder decidir qué hacer con tu vida.
 
-  - id: 8
-    title: El paradojo del hombre rico
-    summary: >
-      Muchos millonarios reales viven de forma austera. La riqueza visible suele ser
-      consecuencia de gastar, no de acumular.
-    core: La riqueza real es lo que no se ve.
-    bullets:
-      - Gastar menos de lo que ganás es clave
-      - La ostentación suele ocultar fragilidad
-      - La simplicidad protege el capital
+    '
+  core: El dinero sirve para controlar tu tiempo, no para acumular cosas.
+  bullets:
+  - La libertad es el mayor dividendo
+  - Controlar el tiempo es el verdadero lujo
+  - Menos gastos fijos = más opciones
+- id: 8
+  title: El paradojo del hombre rico
+  image: images/psychology-of-money/c8.jpg
+  summary: 'Muchos millonarios reales viven de forma austera. La riqueza visible suele
+    ser consecuencia de gastar, no de acumular.
 
-  - id: 9
-    title: Riqueza invisible
-    summary: >
-      El dinero no gastado genera opciones futuras. El ahorro crea flexibilidad y reduce
-      la dependencia de ingresos constantes.
-    core: El dinero que no se gasta es más poderoso que el que se muestra.
-    bullets:
-      - El ahorro es una opción, no un sacrificio
-      - La flexibilidad nace del margen
-      - Menos dependencia = más resiliencia
+    '
+  core: La riqueza real es lo que no se ve.
+  bullets:
+  - Gastar menos de lo que ganás es clave
+  - La ostentación suele ocultar fragilidad
+  - La simplicidad protege el capital
+- id: 9
+  title: Riqueza invisible
+  image: images/psychology-of-money/c9.jpg
+  summary: 'El dinero no gastado genera opciones futuras. El ahorro crea flexibilidad
+    y reduce la dependencia de ingresos constantes.
 
-  - id: 10
-    title: Guardá dinero
-    summary: >
-      Tener efectivo o reservas permite afrontar crisis sin tomar malas decisiones.
-      No se trata de maximizar retornos, sino de sobrevivir a lo inesperado.
-    core: Tener reservas reduce la dependencia de predicciones.
-    bullets:
-      - El efectivo compra tiempo
-      - No todo se puede predecir
-      - La liquidez reduce el estrés
+    '
+  core: El dinero que no se gasta es más poderoso que el que se muestra.
+  bullets:
+  - El ahorro es una opción, no un sacrificio
+  - La flexibilidad nace del margen
+  - Menos dependencia = más resiliencia
+- id: 10
+  title: Guardá dinero
+  image: images/psychology-of-money/c10.jpg
+  summary: 'Tener efectivo o reservas permite afrontar crisis sin tomar malas decisiones.
+    No se trata de maximizar retornos, sino de sobrevivir a lo inesperado.
 
-  - id: 11
-    title: Razonable > racional
-    summary: >
-      Un plan financieramente óptimo no sirve si no podés sostenerlo emocionalmente.
-      Ser razonable aumenta la probabilidad de éxito a largo plazo.
-    core: Ser razonable es más sostenible que ser perfectamente racional.
-    bullets:
-      - Las emociones importan
-      - Un plan imperfecto pero mantenible gana
-      - La disciplina supera a la optimización
+    '
+  core: Tener reservas reduce la dependencia de predicciones.
+  bullets:
+  - El efectivo compra tiempo
+  - No todo se puede predecir
+  - La liquidez reduce el estrés
+- id: 11
+  title: Razonable > racional
+  image: images/psychology-of-money/c11.jpg
+  summary: 'Un plan financieramente óptimo no sirve si no podés sostenerlo emocionalmente.
+    Ser razonable aumenta la probabilidad de éxito a largo plazo.
 
-  - id: 12
-    title: La sorpresa
-    summary: >
-      El futuro siempre sorprende. Los mayores eventos económicos suelen ser
-      imposibles de prever con precisión.
-    core: El futuro siempre será distinto al pasado.
-    bullets:
-      - La historia no se repite exactamente
-      - Prepararse es mejor que predecir
-      - La adaptabilidad es clave
+    '
+  core: Ser razonable es más sostenible que ser perfectamente racional.
+  bullets:
+  - Las emociones importan
+  - Un plan imperfecto pero mantenible gana
+  - La disciplina supera a la optimización
+- id: 12
+  title: La sorpresa
+  image: images/psychology-of-money/c12.jpg
+  summary: 'El futuro siempre sorprende. Los mayores eventos económicos suelen ser
+    imposibles de prever con precisión.
 
-  - id: 13
-    title: Error de margen
-    summary: >
-      Housel recomienda dejar margen de seguridad en decisiones financieras.
-      Optimizar al límite aumenta el riesgo de errores fatales.
-    core: Dejar margen de seguridad reduce errores fatales.
-    bullets:
-      - No optimizar al límite
-      - El margen protege contra lo inesperado
-      - Sobrevivir es ganar
+    '
+  core: El futuro siempre será distinto al pasado.
+  bullets:
+  - La historia no se repite exactamente
+  - Prepararse es mejor que predecir
+  - La adaptabilidad es clave
+- id: 13
+  title: Error de margen
+  image: images/psychology-of-money/c13.jpg
+  summary: 'Housel recomienda dejar margen de seguridad en decisiones financieras.
+    Optimizar al límite aumenta el riesgo de errores fatales.
 
-  - id: 14
-    title: Vos vas a cambiar
-    summary: >
-      Las personas cambian de objetivos con el tiempo. Diseñar planes rígidos
-      ignora esta realidad y aumenta la frustración.
-    core: Tus objetivos y prioridades cambian con el tiempo.
-    bullets:
-      - Los planes rígidos fallan
-      - La flexibilidad es una ventaja
-      - Diseñar para el cambio
+    '
+  core: Dejar margen de seguridad reduce errores fatales.
+  bullets:
+  - No optimizar al límite
+  - El margen protege contra lo inesperado
+  - Sobrevivir es ganar
+- id: 14
+  title: Vos vas a cambiar
+  image: images/psychology-of-money/c14.jpg
+  summary: 'Las personas cambian de objetivos con el tiempo. Diseñar planes rígidos
+    ignora esta realidad y aumenta la frustración.
 
-  - id: 15
-    title: Nada es gratis
-    summary: >
-      Toda ganancia financiera tiene un costo: volatilidad, estrés o incertidumbre.
-      Entender ese precio evita decisiones impulsivas.
-    core: Todo retorno tiene un costo emocional.
-    bullets:
-      - Volatilidad es el precio de crecer
-      - No hay ganancias sin incomodidad
-      - Aceptar el costo evita errores
+    '
+  core: Tus objetivos y prioridades cambian con el tiempo.
+  bullets:
+  - Los planes rígidos fallan
+  - La flexibilidad es una ventaja
+  - Diseñar para el cambio
+- id: 15
+  title: Nada es gratis
+  image: images/psychology-of-money/c15.jpg
+  summary: 'Toda ganancia financiera tiene un costo: volatilidad, estrés o incertidumbre.
+    Entender ese precio evita decisiones impulsivas.
 
-  - id: 16
-    title: Vos y yo
-    summary: >
-      Cada persona tiene objetivos, horizontes y tolerancia al riesgo distintos.
-      Copiar estrategias ajenas suele terminar mal.
-    core: Cada inversor juega un juego distinto.
-    bullets:
-      - No copiar estrategias ajenas
-      - El contexto personal manda
-      - Definir tu propio juego
+    '
+  core: Todo retorno tiene un costo emocional.
+  bullets:
+  - Volatilidad es el precio de crecer
+  - No hay ganancias sin incomodidad
+  - Aceptar el costo evita errores
+- id: 16
+  title: Vos y yo
+  image: images/psychology-of-money/c16.jpg
+  summary: 'Cada persona tiene objetivos, horizontes y tolerancia al riesgo distintos.
+    Copiar estrategias ajenas suele terminar mal.
 
-  - id: 17
-    title: El pesimismo suena inteligente
-    summary: >
-      El pesimismo llama la atención porque parece sofisticado, pero el progreso
-      económico a largo plazo ha sido impulsado por el optimismo.
-    core: El optimismo funciona mejor a largo plazo.
-    bullets:
-      - El pesimismo atrae atención
-      - El progreso es lento pero real
-      - Pensar en décadas
+    '
+  core: Cada inversor juega un juego distinto.
+  bullets:
+  - No copiar estrategias ajenas
+  - El contexto personal manda
+  - Definir tu propio juego
+- id: 17
+  title: El pesimismo suena inteligente
+  image: images/psychology-of-money/c17.jpg
+  summary: 'El pesimismo llama la atención porque parece sofisticado, pero el progreso
+    económico a largo plazo ha sido impulsado por el optimismo.
 
-  - id: 18
-    title: Cuando creas todo
-    summary: >
-      Las historias simples sobre el dinero suelen ocultar complejidades.
-      Creer narrativas únicas lleva a errores de juicio.
-    core: Las historias simples suelen ocultar complejidad.
-    bullets:
-      - Dudar de narrativas fáciles
-      - La realidad es más matizada
-      - Mantener pensamiento crítico
+    '
+  core: El optimismo funciona mejor a largo plazo.
+  bullets:
+  - El pesimismo atrae atención
+  - El progreso es lento pero real
+  - Pensar en décadas
+- id: 18
+  title: Cuando creas todo
+  image: images/psychology-of-money/c18.jpg
+  summary: 'Las historias simples sobre el dinero suelen ocultar complejidades. Creer
+    narrativas únicas lleva a errores de juicio.
 
-  - id: 19
-    title: Todo junto
-    summary: >
-      El libro concluye que el éxito financiero no depende de fórmulas mágicas,
-      sino de buen comportamiento, paciencia y humildad.
-    core: El éxito financiero es una combinación de comportamiento, paciencia y humildad.
-    bullets:
-      - Pensar a largo plazo
-      - Controlar el riesgo
-      - Mantenerse en el juego
+    '
+  core: Las historias simples suelen ocultar complejidad.
+  bullets:
+  - Dudar de narrativas fáciles
+  - La realidad es más matizada
+  - Mantener pensamiento crítico
+- id: 19
+  image: images/psychology-of-money/c19.jpg
+  title: Todo junto
+  summary: 'El libro concluye que el éxito financiero no depende de fórmulas mágicas,
+    sino de buen comportamiento, paciencia y humildad.
 
-
+    '
+  core: El éxito financiero es una combinación de comportamiento, paciencia y humildad.
+  bullets:
+  - Pensar a largo plazo
+  - Controlar el riesgo
+  - Mantenerse en el juego

@@ -272,6 +272,12 @@ class Views {
          </div>`
       : '';
 
+    const summaryHTML = chapter.summary
+      ? `<div style="margin-top: 1.5rem; padding: 1.25rem; background: var(--card); border-left: 3px solid var(--accent); border-radius: 8px;">
+           <p style="color: var(--text); margin: 0; line-height: 1.7;">${chapter.summary}</p>
+         </div>`
+      : '';
+
     const imageHTML = chapter.image
       ? `<img src="${chapter.image}" alt="${chapter.title}"
              style="width: 100%; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.5);" />`
@@ -325,6 +331,7 @@ class Views {
               <p class="core">${chapter.core}</p>
               ${bulletsHTML}
               ${expandHTML}
+              ${summaryHTML}
               ${audioHTML}
             </div>
             ${chapter.image ? `<div style="flex: 0 0 400px; max-width: 400px;">${imageHTML}</div>` : ''}
